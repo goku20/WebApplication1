@@ -33,7 +33,7 @@ namespace WebApplication1
             
             app.UseEndpoints(endpoints =>
             {
-                // special   routes before default! lägg till fler innan. vil inte att den skall lätta efter  instället gå via conroolers
+                // special   routes before default! lägg till fler innan. vil inte att den skall lätta efter  instället gå via controllers
                 endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
               // hur den  skall routa , tar bor standard genererad 
                 // endpoints.MapGet("/", async context =>

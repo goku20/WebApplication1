@@ -13,15 +13,17 @@
         <ul>
 
             <li>
-                <a href="@Url.Action("Index","Home")">Index</a>  
+                <a href="@Url.Action("Index","Home")">Index</a>
             </li>
             <li>
                 @Html.ActionLink("Math Table", "MathTable", "Home")
             </li>
             <li>
                 <a asp-action="Contact" asp-controller="Home">Contact</a>
+            <li>
+                <a asp-action="Index" asp-controller="Reviews">Reviews</a>
             </li>
-            
+
         </ul>
 
 
