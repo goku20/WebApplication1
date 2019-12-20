@@ -12,10 +12,7 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             ViewBag.ReviewList = Review.reviewsList; 
-             
-
-
-
+       
             return View();
 
         }
