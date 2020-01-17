@@ -28,19 +28,25 @@
             <li>
                 <a asp-action="Index" asp-controller="Cars">Cars</a>
             </li>
+            <li>
+                <a asp-action="Index" asp-controller="Helth">Helth</a>
+            </li>
         </ul>
 
 
     </nav>
 
-    <hr />
+
     <div>
         @RenderBody()
     </div>
 
-    </hr>
-    <footer>
-        <p>H.Rathod &copy; @DateTime.Now.Year</p>
+    <hr/>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            @DateTime.Now.Year H.Rathod &copy;
+        </div>
     </footer>
 </body>
 </html>
