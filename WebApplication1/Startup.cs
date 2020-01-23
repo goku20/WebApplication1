@@ -18,7 +18,7 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
                 services.AddDistributedMemoryCache();
-
+            
                 services.AddSession(options =>
                 {
                     // Set a short timeout for easy testing.
@@ -30,6 +30,8 @@ namespace WebApplication1
 
 
                 services.AddMvc(); // addd MVC so we can use it
+            services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
