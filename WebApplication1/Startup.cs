@@ -63,6 +63,11 @@ namespace WebApplication1
                     pattern: "WhriteYourReviews",
                defaults: new { controller = "Reviews", action = "Create" }
                 );
+                endpoints.MapControllerRoute(
+                  "FeverCheck",
+                   pattern: "FeverCheck",
+              defaults: new { controller = "Helth", action = "FeverCheck" }
+               );
                 // special   routes before default! lägg till fler innan. vil inte att den skall lätta efter  instället gå via controllers
                 endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
               // hur den  skall routa , tar bor standard genererad 

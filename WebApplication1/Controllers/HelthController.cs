@@ -13,18 +13,24 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public ActionResult CompareTemp(double? newNumber, string Temperature)
+        public ActionResult CompareTemp(float? newNumber, string Temperature)
         {
 
             if (newNumber == null)
             {
-                ViewBag.Message = "Your result will show up here.";
+                ViewBag.Message = "Your must enter digit in Celsius or Farenheit";
 
             }
 
 
             if (Temperature.Equals("Celsius"))
             {
+
+                if (newNumber == null)
+                {
+                    ViewBag.Message = "Your must enter digit in Celsius or Farenheit";
+
+                }
                 if (newNumber > 37.7)
                 {
                     ViewBag.Message = "You have a fever go the bed!";
@@ -35,7 +41,7 @@ namespace WebApplication1.Controllers
                 }
                 else
                 {
-                    ViewBag.Message = "You are just fine";
+                    ViewBag.Message = "Please enter your temp in Celsius";
                 }
             }
             else
@@ -50,7 +56,7 @@ namespace WebApplication1.Controllers
                 }
                 else
                 {
-                    ViewBag.Message = "You are just fine";
+                    ViewBag.Message = "Enter temp in Farenheit";
                 }
             }
             return View("FeverCheck");

@@ -1,9 +1,15 @@
 ﻿body {
-    background-color: gray;
+    background-color: blueviolet;
 
 }
 
 h1{
     color:white;
     background-color:red;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }

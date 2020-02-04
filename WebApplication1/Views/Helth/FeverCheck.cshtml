@@ -2,27 +2,31 @@
 @{
     ViewBag.Title = "FeverCheck";
 }
-
-<h1>Helth Check</h1>
+    <h1>Helth Check</h1>
 <p>If you have a Fever?</p>
+
 
 
 
 <form asp action="/Helth/CompareTemp/" method="post">
     <div>
-
+        
         Enter Temp:<input type="number" name="newNumber" id="msg">
+        <br />
         <input type="radio" id="tempChoice1"
                name="Temperature" value="Celsius" checked>
-        <label for="tempChoice1">Celsius</label>
+       
+        <label asp for="tempChoice1">Celsius</label>
+        
         <input type="radio" id="tempChoice2"
                name="Temperature" value="Farenheit">
-        <label for="tempChoice2">Farenheit</label>
+        
+        <label asp for="tempChoice2">Farenheit</label>
 
     </div>
     <div>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Fever check"class="btn btn-primary" >
     </div>
 </form>
 @if (ViewBag.Message != null)
