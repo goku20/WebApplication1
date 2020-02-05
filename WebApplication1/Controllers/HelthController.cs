@@ -15,7 +15,13 @@ namespace WebApplication1.Controllers
         }
         public ActionResult CompareTemp(float? newNumber, string Temperature)
         {
-
+            //if (string.IsNullOrWhiteSpace(Temperature)
+                
+            //    || newNumber == null
+            //    )
+            //{
+            //    return null;
+            //}
             if (newNumber == null)
             {
                 ViewBag.Message = "Your must enter digit in Celsius or Farenheit";

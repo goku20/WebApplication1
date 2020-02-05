@@ -1,11 +1,11 @@
 ﻿body {
-    background-color: blueviolet;
+    background-color: gray;
 
 }
 
 h1{
-    color:white;
-    background-color:red;
+    color:yellow;
+    background-color:black;
 }
 
 .btn-primary {
